@@ -13,8 +13,8 @@ adnav_node:
     ################ Serial Communication Parameters
     # Supported Baud Rates: 2.4K, 4.8K, 9.6K, 19.2K, 38.4K, 57.6K.
     # 115.2K, 230.4K, 460.8K, 500K, 576K, 921.6K, 1M, 2M
-    baud_rate: 1000000
-    com_port: ttyUSB1
+    baud_rate: 2000000 # 1000000
+    com_port: ttyUSB0 # ttyUSB1
 
     ################ IP Communication Parameters
     # IP of the Advanced Navigation Device. 
@@ -26,7 +26,7 @@ adnav_node:
     # Warning on some systems this is performance limited.  
     # The configuration will be rejected if publissh_us < read_us
     # Units are in μs. 20000 = 50Hz | 1000 = 1000Hz etc.
-    publish_us: 20000
+    publish_us: 50000
     read_us: 1000
 
     ################ Packet Parameters
